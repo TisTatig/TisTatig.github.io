@@ -37,14 +37,67 @@
     }
 
     .container {
+        margin: 15vh 0 0 0;
         display:flex;
         justify-content: center;
+        align-content: center;
         align-items: center;
+        height: 70vh;
+        gap: 10%;
+        background-color: blue;;
+        }
+
+    .leftblock {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: center;
+        border: 5px solid red;
+        width: 50%;
+        max-height: 80%;
+        aspect-ratio: 960 / 1280;
+    }
+
+    .title {
+        font-size: 4vw;
+        font-family: Arial;
+        font-weight: bold;
+    }
+
+    .description {
+        font-size: 1vw;
+        font-family: arial;
+        color: grey;
+        font-weight: bold;
     }
 
     #logo {
         align-self: center;
     }
+
+    #hero {
+        display:block;
+        width: 50%;
+        aspect-ratio: 960 / 1280;
+        background: red;
+        max-height: 80%;
+        }
+
+    #learn {
+        
+        background-color: black;
+        color:white;
+        align-self: flex-start;
+        padding: 3%;
+        border-radius: 1.5em;
+        text-align: center;
+        font: bold 1vw Arial;
+        width: 10vw;
+        height: 6vh;
+        vertical-align: middle;
+    }
+
 </style>
 
 </head>
@@ -67,17 +120,18 @@
     </header>
 
     <div class="container">
-        <div class="left block">
+        <div class="leftblock">
             <div class="title">Make remote work</div>
             <div class="description">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</div>
-            <button>Learn more</button>
-            <div class="sponsor container">
+            <button id="learn">Learn more</button>
+            <div class="sponsorcontainer">
                 <!-- sponsor 1 -->
                 <!-- sponsor 2 -->
                 <!-- sponsor 3 -->
                 <!-- sponsor 4 -->
             </div>
         </div>
+        <img src="images/image-hero-desktop.png" id="hero">
 
     </div>
 </body>
