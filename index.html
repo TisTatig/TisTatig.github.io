@@ -4,27 +4,67 @@
     <title>Snap - Make remote work</title>
 
 <style>
+    header {
+        position: relative;
+        display: flex;
+        width: 100%;
+        /* background-color: pink; */
+        align-content: center;
+    }
+
+    nav {
+        display: flex;
+        overflow: auto;
+        /* background-color: red; */
+        align-content: center;
+        justify-items: left;
+        flex-grow: 1;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    li {
+        padding: 10%;
+    }
+
+    .navbuttons {
+        display: flex;
+        align-items: center;
+    }
+
     .container {
         display:flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #logo {
+        align-self: center;
     }
 </style>
 
 </head>
 
 <body style="background-color: hsl(0, 0%, 98%);">
-    <nav>
-        <ul>
-            <li>logo</li>
-            <li>Features</li>
-            <li>Company</li>
-            <li>Careers</li>
-            <li>About</li>
-            <button class="login">Login</button>
-            <button class="Register">Register</button>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <img id="logo" src="images/logo.svg">
+            <ul>
+                <li>Features</li>
+                <li>Company</li>
+                <li>Careers</li>
+                <li>About</li>                 
+            </ul>
+        </nav>
+        <div class="navbuttons">
+            <button class="navbutton" id="login">Login</button>
+            <button class="navbutton" id="Register">Register</button>
+        </div>
+    </header>
 
     <div class="container">
         <div class="left block">
