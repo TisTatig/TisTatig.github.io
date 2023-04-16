@@ -1,137 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Snap - Make remote work</title>
+    <title>TisTatig - POONS</title>
 
-<style>
-    header {
-        position: relative;
-        display: flex;
-        width: 100%;
-        /* background-color: pink; */
-        align-content: center;
-    }
-
-    nav {
-        display: flex;
-        overflow: auto;
-        /* background-color: red; */
-        align-content: center;
-        justify-items: left;
-        flex-grow: 1;
-    }
-
-    ul{
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-    }
-
-    li {
-        padding: 10%;
-    }
-
-    .navbuttons {
-        display: flex;
-        align-items: center;
-    }
-
-    .container {
-        margin: 15vh 0 0 0;
-        display:flex;
-        justify-content: center;
-        align-content: center;
-        align-items: stretch;
-        height: 70vh;
-        gap: 10%;
-        background-color: blue;;
+    <style>
+        body {
+            background-color: black;
         }
 
-    .leftblock {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: stretch;
-        align-content: center;
-        border: 5px solid red;
-        max-width: 50%;
-        max-height: 80%;
-    }
-
-    .title {
-        font-size: 4vw;
-        font-family: Arial;
-        font-weight: bold;
-    }
-
-    .description {
-        font-size: 1vw;
-        font-family: arial;
-        color: grey;
-        font-weight: bold;
-    }
-
-    #logo {
-        align-self: center;
-    }
-
-    #hero {
-        display:block;
-        max-width: 50%;
-        background: red;
-        max-height: 80%;
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-    #learn {
-        
-        background-color: black;
-        color:white;
-        align-self: flex-start;
-        padding: 3%;
-        border-radius: 1.5em;
-        text-align: center;
-        font: bold 1vw Arial;
-        width: 10vw;
-        height: 6vh;
-        vertical-align: middle;
-    }
+        nav {
+            display: flex;
+            background-color: darkolivegreen;
+            color: white;
+            width: 100%;
+            max-height: 10vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-</style>
+        ul {
+            display: flex;
+            list-style-type: none;
+            width: 100%;
+            max-height: 5vh;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        li {
+            margin: 1vw;        
+        }
+
+        .title {
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+
+        .mainbody {
+            display: flex;
+        }
+
+        .halfblock {
+            background-color: white;
+            width: 50%;
+            height: 100%;
+            padding: 10% 0 10% 0;
+            margin: 0%;
+
+        }
+        .leftside {
+            border: solid red;
+        }
+
+        .rightside {
+            border: solid green;
+        }
+    </style>
 
 </head>
 
-<body style="background-color: hsl(0, 0%, 98%);">
+<body>
     <header>
         <nav>
-            <img id="logo" src="images/logo.svg">
             <ul>
-                <li>Features</li>
-                <li>Company</li>
-                <li>Careers</li>
-                <li>About</li>                 
+                <li>Projects</li>
+                <li>Studies</li>
+                <li>Blog</li>
+                <li>Contact</li>
             </ul>
         </nav>
-        <div class="navbuttons">
-            <button class="navbutton" id="login">Login</button>
-            <button class="navbutton" id="Register">Register</button>
-        </div>
     </header>
 
-    <div class="container">
-        <div class="leftblock">
-            <div class="title">Make remote work</div>
-            <div class="description">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</div>
-            <button id="learn">Learn more</button>
-            <div class="sponsorcontainer">
-                <!-- sponsor 1 -->
-                <!-- sponsor 2 -->
-                <!-- sponsor 3 -->
-                <!-- sponsor 4 -->
-            </div>
-        </div>
-        <img src="images/image-hero-desktop.png" id="hero">
+<div class="title">Developer TisTatig/Poons DJ</div>
+<div class="mainbody">
+<div class="halfblock leftside"></div>
+<div class="halfblock rightside"></div>
+</div>
 
-    </div>
 </body>
 
 </html>
